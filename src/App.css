@@ -252,6 +252,11 @@ html, body {
   margin: 5px 0;
 }
 
+.footer-column a {
+  color: #ffffff; 
+  text-decoration: none; 
+}
+
 .footer-right {
   flex: 1;
   padding: 10px;
@@ -302,4 +307,19 @@ html, body {
 
 ::-webkit-scrollbar-thumb {
   background: #656565; 
+}
+
+.scroll-to-top {
+  animation: scroll-up 0.5s ease;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

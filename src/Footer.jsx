@@ -1,16 +1,32 @@
 import React, { useState } from 'react';
 
 function Footer() {
-  const [email, setEmail] = useState(''); // Состояние для email
-  const [isSubscribed, setIsSubscribed] = useState(false); // Состояние для отслеживания подписки
+  const [email, setEmail] = useState('');
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
 
   const handleSubscribe = () => {
-    // Здесь костар можешь сделать логику для отправки email на сервер, если необходимо.
-    setIsSubscribed(true);
+    if (email.includes("@mail")) {
+      setIsSubscribed(true);
+    } else {
+      alert("Поле содержит неправильные символы, убедитесь в правильности написания вашего Email.");
+    }
+  };
+
+  // не работает надо пофиксить //
+  const handleCatalogClick = () => {
+    const womensClothing = document.getElementById('womens-clothing');
+  
+    if (womensClothing) {
+      const yOffset = womensClothing.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: yOffset,
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
@@ -27,24 +43,23 @@ function Footer() {
             <p>Основные ссылки</p>
             <ul>
               <li>О нас</li>
-              <li>Каталог</li>
+              <li><a href="#womens-clothing" onClick={handleCatalogClick}>Каталог</a></li>
               <li>Доставка</li>
-              <li>Оплата</li>
             </ul>
           </div>
           <div className="footer-column">
             <p>Категории</p>
             <ul>
-              <li>Женское</li>
-              <li>Мужское</li>
-              <li>Унисекс</li>
+            <li><a href="#womens-clothing">Женское</a></li>
+            <li><a href="#mens-clothing">Мужское</a></li>
+            <li><a href="#unisex-clothing">Унисекс</a></li>
             </ul>
           </div>
           <div className="footer-column">
             <p>Полезные ссылки</p>
             <ul>
-              <li>Таблица размеров</li>
-              <li>Блог о моде</li>
+            <li><a href="https://sheitesnami.ru/razmernye-tablicy-odezhdy">Таблица размеров</a></li>
+              <li><a href="https://www.elle.ru/moda/fashion-blog/">Блог о моде</a></li>
             </ul>
           </div>
         </div>
