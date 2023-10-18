@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
-function RegistrationPage() {
+export default function RegisterPage() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -64,8 +64,5 @@ function RegistrationPage() {
       </div>
       <button onClick={handleRegistration}>Зарегистрироваться</button>
       <p>Уже есть аккаунт? <a href="/login">Войти</a></p>
-    </div>
-  );
+    </div>)
 }
-
-export default RegistrationPage;

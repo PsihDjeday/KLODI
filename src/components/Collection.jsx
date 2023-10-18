@@ -1,6 +1,4 @@
-// Collection.js
-import React, { useState } from 'react';
-import './App.css';
+import { useState } from "react";
 
 function Catalog() {
   const womensProducts = [
@@ -119,10 +117,10 @@ function Catalog() {
 
   return (
     <div className="catalog">
-<div className="collection-label" id="womens-clothing">
+      <div className="collection-label" id="womens-clothing">
         <p>ЖЕНСКОЕ</p>
       </div>
-      
+
       <div className="product-list">
         {womensProducts.map((product, index) => (
           <div
@@ -131,7 +129,11 @@ function Catalog() {
             onMouseEnter={() => handleProductHover(product)}
             onMouseLeave={() => handleProductHover(null)}
           >
-            <img src={product.image} alt={product.name} className="product-image" />
+            <img
+              src={product.image}
+              alt={product.name}
+              className="product-image"
+            />
             <p>{product.name}</p>
             {hoveredProduct?.name === product.name && (
               <div className="product-overlay">
@@ -160,7 +162,11 @@ function Catalog() {
             onMouseEnter={() => handleProductHover(product)}
             onMouseLeave={() => handleProductHover(null)}
           >
-            <img src={product.image} alt={product.name} className="product-image" />
+            <img
+              src={product.image}
+              alt={product.name}
+              className="product-image"
+            />
             <p>{product.name}</p>
             {hoveredProduct?.name === product.name && (
               <div className="product-overlay">
@@ -189,7 +195,11 @@ function Catalog() {
             onMouseEnter={() => handleProductHover(product)}
             onMouseLeave={() => handleProductHover(null)}
           >
-            <img src={product.image} alt={product.name} className="product-image" />
+            <img
+              src={product.image}
+              alt={product.name}
+              className="product-image"
+            />
             <p>{product.name}</p>
             {hoveredProduct?.name === product.name && (
               <div className="product-overlay">

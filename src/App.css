@@ -1,9 +1,10 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff !important; 
-  color: #000000; 
-  font-family: Arial, sans-serif; 
+  background-color: #ffffff !important;
+  color: #000000;
+  font-family: Arial, sans-serif;
 }
 
 .announcement {
@@ -12,14 +13,14 @@ html, body {
 
 .header {
   width: 1760px;
-  background-color: transparent; 
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   margin: 15px auto 0;
-  border-top: 2px solid #000; 
-  border-bottom: 2px solid #000; 
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .header-container {
@@ -30,7 +31,8 @@ html, body {
   margin: 0 auto;
 }
 
-.header-left, .right-section {
+.header-left,
+.right-section {
   display: flex;
   align-items: center;
 }
@@ -47,44 +49,44 @@ html, body {
 }
 
 .header-menu a {
-  color: #000; 
+  color: #000;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
 }
 
 .center-section {
-  flex: 1; 
+  flex: 1;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
-.logo  {
-  font-size: 48px; 
+.logo {
+  font-size: 48px;
   text-align: center;
-  margin-right: 100px; 
-  margin-left: 100px; 
-  cursor: default; 
+  margin-right: 100px;
+  margin-left: 100px;
+  cursor: default;
 }
 
 .logo a {
-  color: #000; 
-  text-decoration: none; 
+  color: #000;
+  text-decoration: none;
 }
 
 .slider-container {
   position: relative;
   width: 1760px;
   margin: 15px auto 0;
-  height: 790px; 
+  height: 790px;
   overflow: hidden;
   border-radius: 20px;
 }
 
 .slider {
-  width: 5280px; 
-  height: 790px; 
-  display: flex; 
+  width: 5280px;
+  height: 790px;
+  display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -106,20 +108,20 @@ html, body {
   line-height: 50px;
   text-align: center;
   cursor: pointer;
-  border-radius: 50%; 
+  border-radius: 50%;
   z-index: 1;
 }
 
 .left-button {
-  left: 10px; 
-  top: 50%; 
+  left: 10px;
+  top: 50%;
   transform: translateY(-50%);
 }
 
 .right-button {
-  right: 10px; 
-  top: 50%; 
-  transform: translateY(-50%); 
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .slide {
@@ -148,11 +150,11 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 60px; 
+  margin: 0 60px;
 }
 
 .product {
-  position: relative; 
+  position: relative;
   width: calc(25% - 20px);
   margin: 0 10px 20px;
   text-align: center;
@@ -253,8 +255,8 @@ html, body {
 }
 
 .footer-column a {
-  color: #ffffff; 
-  text-decoration: none; 
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-right {
@@ -286,27 +288,27 @@ html, body {
   cursor: pointer;
 }
 
-.footer-logo  {
-  font-size: 48px; 
-  text-align: left; 
-  margin-top: 10px; 
+.footer-logo {
+  font-size: 48px;
+  text-align: left;
+  margin-top: 10px;
 }
 
 .footer-logo a {
-  color: #ffffff; 
-  text-decoration: none; 
+  color: #ffffff;
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {
-  width: 7px; 
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff; 
+  background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #656565; 
+  background: #656565;
 }
 
 .scroll-to-top {

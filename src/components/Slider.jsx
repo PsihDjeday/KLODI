@@ -1,5 +1,4 @@
-// Slider.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Slider = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);

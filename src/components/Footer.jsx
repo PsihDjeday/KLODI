@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 function Footer() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
 
   const handleEmailChange = (e) => {
@@ -9,22 +9,25 @@ function Footer() {
   };
 
   const handleSubscribe = () => {
-    if (email.includes("@mail")) {
+    if (email.includes("@")) {
       setIsSubscribed(true);
     } else {
-      alert("Поле содержит неправильные символы, убедитесь в правильности написания вашего Email.");
+      alert(
+        "Поле содержит неправильные символы, убедитесь в правильности написания вашего Email."
+      );
     }
   };
 
   // не работает надо пофиксить //
   const handleCatalogClick = () => {
-    const womensClothing = document.getElementById('womens-clothing');
-  
+    const womensClothing = document.getElementById("womens-clothing");
+
     if (womensClothing) {
-      const yOffset = womensClothing.getBoundingClientRect().top + window.scrollY;
+      const yOffset =
+        womensClothing.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: yOffset,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -33,7 +36,10 @@ function Footer() {
     <div className="footer">
       <div className="footer-content">
         <div className="footer-left">
-          <p>У нас вы найдете лучший подбор костюмов, созданных с заботой о вашем комфорте, на все случаи жизни.</p>
+          <p>
+            У нас вы найдете лучший подбор костюмов, созданных с заботой о вашем
+            комфорте, на все случаи жизни.
+          </p>
           <div className="footer-logo">
             <a href="#">KLODI</a>
           </div>
@@ -43,23 +49,39 @@ function Footer() {
             <p>Основные ссылки</p>
             <ul>
               <li>О нас</li>
-              <li><a href="#womens-clothing" onClick={handleCatalogClick}>Каталог</a></li>
+              <li>
+                <a href="#womens-clothing" onClick={handleCatalogClick}>
+                  Каталог
+                </a>
+              </li>
               <li>Доставка</li>
             </ul>
           </div>
           <div className="footer-column">
             <p>Категории</p>
             <ul>
-            <li><a href="#womens-clothing">Женское</a></li>
-            <li><a href="#mens-clothing">Мужское</a></li>
-            <li><a href="#unisex-clothing">Унисекс</a></li>
+              <li>
+                <a href="#womens-clothing">Женское</a>
+              </li>
+              <li>
+                <a href="#mens-clothing">Мужское</a>
+              </li>
+              <li>
+                <a href="#unisex-clothing">Унисекс</a>
+              </li>
             </ul>
           </div>
           <div className="footer-column">
             <p>Полезные ссылки</p>
             <ul>
-            <li><a href="https://sheitesnami.ru/razmernye-tablicy-odezhdy">Таблица размеров</a></li>
-              <li><a href="https://www.elle.ru/moda/fashion-blog/">Блог о моде</a></li>
+              <li>
+                <a href="https://sheitesnami.ru/razmernye-tablicy-odezhdy">
+                  Таблица размеров
+                </a>
+              </li>
+              <li>
+                <a href="https://www.elle.ru/moda/fashion-blog/">Блог о моде</a>
+              </li>
             </ul>
           </div>
         </div>
