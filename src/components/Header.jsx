@@ -27,7 +27,7 @@ function Header() {
               <a href="#">Доставка</a>
             </li>
             <li>
-              <a href="#" onClick={scrollToWomensClothing}>
+              <a href="/catalog">
                 Каталог
               </a>
             </li>
